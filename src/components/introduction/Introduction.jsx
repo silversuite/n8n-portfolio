@@ -39,7 +39,7 @@ const Introduction = () => {
             I'm a Freelance <span className="bg-highlight">N8N developer</span>{" "}
             and <span className="bg-highlight"> Integration Specialist</span>{" "}
             based in Bangalore, India. I love building AI-powered automations
-            with n8n. This site showcases my automation portfolio 🚀
+            with n8n. This site showcases my automation portfolio.
           </p>
           <p className="text-center lg:text-start">
             <a
