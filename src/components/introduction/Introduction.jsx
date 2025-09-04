@@ -7,17 +7,17 @@ const informationSummaryData = [
   {
     id: 1,
     title: "Experience",
-    description: "15 Y.",
+    description: "14 Y.",
   },
   {
     id: 2,
     title: "Projects Completed",
-    description: "250+",
+    description: "80+",
   },
   {
     id: 3,
     title: "Happy Clients",
-    description: "58",
+    description: "22",
   },
 ];
 
@@ -44,7 +44,7 @@ const Introduction = () => {
           <p className="text-center lg:text-start">
             <a
               className="btn-primary btn btn-xs xxs:btn-lg text-white"
-              href="mailto:example@gmail.com"
+              href="mailto:suhas.mv89@gmail.com"
             >
               Say Hello!
             </a>

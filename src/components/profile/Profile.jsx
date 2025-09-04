@@ -33,19 +33,23 @@ const Profile = () => {
           <h2
             className={`text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] text-[min(24px,38px)] max-md:text-center font-semibold mb-8`}
           >
-            I am Professional User Experience Designer
+            n8n Automation Expert | Transforming Businesses through Intelligent Integrations
           </h2>
           <div
             className={`text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center text-gray-600`}
           >
             <p className={``}>
-              I design and develop services for customers specializing creating
-              stylish, modern websites, web services and online stores. My
-              passion is to design digital user experiences.
+            I am an Automation Expert specializing in n8n, with proven experience in designing 
+            and implementing intelligent workflows that connect applications, streamline processes, and 
+            drive business efficiency. I leverage n8n to build scalable automation solutions that reduce 
+            manual effort and accelerate digital transformation.
             </p>
             <p className="mt-3">
-              I design and develop services for customers specializing creating
-              stylish, modern websites, web services.
+            Alongside my automation expertise, I bring over a decade of experience as an Integration 
+            Specialist, delivering enterprise-grade solutions using IBM ACE, IBM MQ, IBM App 
+            Connect, and IBM DataPower. This strong foundation in integration, combined with 
+            modern low-code automation skills, enables me to design end-to-end solutions that are 
+            both robust and future-ready.
             </p>
           </div>
           <div className="mt-8 flex max-md:justify-center">

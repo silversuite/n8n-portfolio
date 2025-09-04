@@ -3,21 +3,21 @@ import Roles from "./Roles";
 const rolesData = [
   {
     id: 1,
-    title: "User Experience (UX)",
+    title: "Automation (n8n & AI)",
     description:
-      "I design intuitive and enjoyable experiences by understanding user needs, conducting research, and creating wireframes and prototypes that enhance usability.",
+      "I design intelligent workflows by connecting applications, automating processes, and leveraging AI to enhance efficiency, reduce manual effort, and unlock business insights.",
   },
   {
     id: 2,
-    title: "User Interface (UI)",
+    title: "Enterprise Integration",
     description:
-      "I craft visually appealing and consistent interfaces, focusing on layout, color, and typography to ensure a seamless and engaging user journey.",
+      "I deliver robust integration solutions using IBM ACE, MQ, App Connect, and DataPower, ensuring secure, scalable, and reliable data exchange across complex enterprise systems.",
   },
   {
     id: 3,
-    title: "Web Development",
+    title: "Digital Transformation",
     description:
-      "I build responsive and high-performance web applications using modern technologies, ensuring accessibility, scalability, and maintainability.",
+      "I enable organizations to modernize their operations by blending automation, integration, and AI—creating solutions that improve agility, resilience, and long-term growth.",
   },
 ];
 
@@ -31,14 +31,10 @@ const Profession = () => {
         <p className="section-title max-md:text-center">What I do?</p>
         <div className="mt-6 text-[14px]">
           <p className="text-xs sm:text-lg font-normal text-gray-400 mb-4">
-            I specialize in designing user experiences, crafting engaging
-            interfaces, and building robust web applications that deliver value
-            and usability.
+            I specialize in building intelligent automations and seamless integrations, leveraging n8n, AI, and enterprise platforms like IBM ACE, MQ, App Connect, and DataPower to connect systems, optimize workflows, and deliver business value.
           </p>
           <p className="text-xs sm:text-lg font-normal text-gray-400">
-            My approach combines creativity and technical expertise to deliver
-            solutions that are both visually appealing and highly functional for
-            users.
+            My approach combines automation expertise and integration engineering to create solutions that are not only efficient and scalable, but also resilient and future-ready for modern enterprises.
           </p>
         </div>
         <a

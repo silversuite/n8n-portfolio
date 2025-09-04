@@ -10,17 +10,17 @@ const projectData = [
   {
     id: 1,
     image: card1,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "N8N Automation",
+    title: "Order Prediction and Notification Workflow",
     description:
-      "I focus on crafting smooth, responsive interfaces that balance aesthetic appeal with practical functionality.",
+      "This project demonstrates how to use n8n to predict the next order date for customers based on their past purchases. The workflow integrates order history data, applies prediction logic, and notifies customers when they are likely due for their next order.",
     link: "#!",
   },
   {
     id: 2,
     image: card2,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "N8N Automation",
+    title: "Order Prediction and Notification Workflow",
     description:
       "Designed an intuitive dashboard for product management, emphasizing clarity and user efficiency.",
     link: "#!",
@@ -73,8 +73,7 @@ const Portfolio = () => {
         <div className="max-sm:px-2 text-center mx-auto max-w-144.25">
           <p className="section-title ">Portfolio</p>
           <p className="font-normal text-[18px] max-sm:text-[14px] pt-6 text-gray-400">
-            Here's a selection of my recent work, showcasing my skills in
-            creating user-centric and visually appealing interfaces.
+            Here's a selection of my recent work, showcasing my skills.
           </p>
         </div>
       </div>
