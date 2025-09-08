@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import logo from "../../../assets/logo.png";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll"; // Alias react-scroll's Link
+import { Link, useLocation } from "react-router-dom"; // Import react-router-dom's Link
 
 const navItems = [
-  { id: 1, name: "Home", url: "introduction" },
+  { id: 1, name: "Home", url: "/" },
   { id: 2, name: "About", url: "profile" },
   { id: 3, name: "Process", url: "work-process" },
   { id: 4, name: "Portfolio", url: "portfolio" },
@@ -17,28 +18,10 @@ const handleMenuClick = () => {
   }
 };
 
-const menu = navItems.map((item) => (
-  <li key={item.id} onMouseDown={(e) => e.preventDefault()}>
-    <Link
-      onClick={handleMenuClick}
-      to={item.url.toLowerCase()}
-      smooth={true}
-      duration={1000}
-      spy={true}
-      offset={-140}
-      activeStyle={{
-        backgroundColor: "#9929fb",
-        color: "white",
-      }}
-      className={`hover:text-picto-primary px-5 py-3 mx-1`}
-    >
-      {item.name}
-    </Link>
-  </li>
-));
-
 const NavBar = () => {
   const [position, setPosition] = useState(0);
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -81,15 +64,51 @@ const NavBar = () => {
               tabIndex={0}
               className={`menu menu-lg dropdown-content rounded-box z-1 mt-3 w-lvw p-2 shadow font-semibold flex-nowrap bg-white text-black`}
             >
-              {menu}
+              {navItems.map((item) => (
+                <li key={item.id} onMouseDown={(e) => e.preventDefault()}>
+                  {item.name === "Home" || item.name === "Contact" ? (
+                    <Link
+                      onClick={handleMenuClick}
+                      to={item.url}
+                      className={`hover:text-picto-primary px-5 py-3`}
+                      activeStyle={{
+                        backgroundColor: "#9929fb",
+                        color: "white",
+                      }}
+                    >
+                      {item.name}
+                    </Link>
+                  ) : isHomePage ? (
+                    <ScrollLink
+                      onClick={handleMenuClick}
+                      to={item.url.toLowerCase()}
+                      smooth={true}
+                      duration={1000}
+                      spy={true}
+                      offset={-140}
+                    >
+                      {item.name}
+                    </ScrollLink>
+                  ) : (
+                    <Link
+                      onClick={handleMenuClick}
+                      to={{ pathname: "/", state: { scrollTo: item.url.toLowerCase() } }}
+                      className={`hover:text-picto-primary px-5 py-3`}
+                      activeStyle={{
+                        backgroundColor: "#9929fb",
+                        color: "white",
+                      }}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
+                </li>
+              ))}
             </ul>
           </div>
 
-          <Link
-            href="#introduction"
-            to={`introduction`}
-            smooth={true}
-            duration={900}
+          <Link // Use react-router-dom Link for the logo to go to the base path
+            to={`/`}
             className="flex items-center border-0 lg:max-xxl:ps-5"
           >
             <p className="text-2xl sm:text-[32px] my-auto font-semibold">
@@ -100,15 +119,51 @@ const NavBar = () => {
 
         <div className="lg:flex items-center">
           <ul className="hidden lg:flex menu menu-horizontal text-[16px] font-medium md:shrink-0">
-            {menu}
+            {navItems.map((item) => (
+              <li key={item.id} onMouseDown={(e) => e.preventDefault()}>
+                {item.name === "Home" || item.name === "Contact" ? (
+                  <Link
+                    onClick={handleMenuClick}
+                    to={item.url}
+                    className={`hover:text-picto-primary px-5 py-3`}
+                    activeStyle={{
+                      backgroundColor: "#9929fb",
+                      color: "white",
+                    }}
+                  >
+                    {item.name}
+                  </Link>
+                ) : isHomePage ? (
+                  <ScrollLink
+                    onClick={handleMenuClick}
+                    to={item.url.toLowerCase()}
+                    smooth={true}
+                    duration={1000}
+                    spy={true}
+                    offset={-140}
+                  >
+                    {item.name}
+                  </ScrollLink>
+                ) : (
+                  <Link
+                    onClick={handleMenuClick}
+                    to={{ pathname: "/", state: { scrollTo: item.url.toLowerCase() } }}
+                    className={`hover:text-picto-primary px-5 py-3`}
+                    activeStyle={{
+                      backgroundColor: "#9929fb",
+                      color: "white",
+                    }}
+                  >
+                    {item.name}
+                  </Link>
+                )}
+              </li>
+            ))}
           </ul>
           <p className="">
-            <Link
+            <Link // Use react-router-dom Link for the Contact button
               className="btn btn-sm xs:btn-md sm:btn-lg btn-primary"
-              href="#contact"
-              to={`contact`}
-              smooth={true}
-              duration={900}
+              to={`/contact`}
             >
               Contact
             </Link>

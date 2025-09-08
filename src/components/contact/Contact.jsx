@@ -11,17 +11,17 @@ const addressData = [
   {
     icon: faLocationDot,
     title: "Address",
-    description: "New Mexico, 31134",
+    description: "Bangalore",
   },
   {
     icon: faEnvelope,
     title: "My Email",
-    description: "mymail@mail.com",
+    description: "suhas.mv89@gmail.com",
   },
   {
     icon: faPhone,
     title: "Call Me Now",
-    description: "00-123 00000",
+    description: "+91 8904516491",
   },
 ];
 
@@ -52,12 +52,12 @@ const Contact = () => {
               <SocialMedia />
             </div>
           </div>
-          <div className="w-full overflow-y-scroll py-6.5">
+          {/*<div className="w-full overflow-y-scroll py-6.5">
             <p className="text-xl mb-2 xs:text-2xl sm:text-2xl md:text-[38px] font-semibold text-[#132238] lg:hidden text-center">
               Let’s discuss your Project
             </p>
             <Form />
-          </div>
+          </div>*/}
         </div>
       </div>
     </div>

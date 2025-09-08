@@ -12,6 +12,7 @@ const Main = () => {
         <Footer />
       </div>
       <ScrollToTop />
+      
     </div>
   );
 };

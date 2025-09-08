@@ -21,7 +21,7 @@ const Footer = () => {
              Suhas MV
            </p>
         </a>
-        <div className="mx-7 max-md:my-7 text-center">
+        <div className="mx-80 max-md:my-7 text-center">
           {navItems.map((item) => (
             <a
               key={item.id}
@@ -33,18 +33,18 @@ const Footer = () => {
             </a>
           ))}
         </div>
-        <p className="text-[12px] sm:text-[16px]">
+        {/* <p className="text-[12px] sm:text-[16px]">
           Copyright &copy; {copyrightYear} Picto.
-        </p>
+        </p> */}
       </div>
       <p className="text-white text-center max-xs:text-[12px] max-md:text-[14px] w-full py-10">
         Developed with ❤️ by{" "}
         <a
-          href="https://www.themewagon.com"
+          href="https://www.linkedin.com/in/suhas-m-v-7a499255/"
           className="underline font-bold"
           target="_blank"
         >
-          ThemeWagon
+          Suhas MV
         </a>
       </p>
     </div>
