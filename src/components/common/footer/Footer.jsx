@@ -6,20 +6,19 @@ const navItems = [
   { id: 2, name: "About", url: "About" },
   { id: 3, name: "Process", url: "Process" },
   { id: 4, name: "Portfolio", url: "Portfolio" },
-  { id: 5, name: "Blog", url: "Blog" },
   { id: 6, name: "Services", url: "Services" },
-  { id: 7, name: "Contact", url: "Contact" },
+  
 ];
 const copyrightYear = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <div className="pt-25 md:pt-40 content max-2xl:px-3">
+    <div className="pt-15 content max-2xl:px-3">
       <div className="flex max-md:flex-col justify-between mx-0 items-center h-full w-full text-neutral-200">
         <a href="#" className="flex items-center border-0">
-                                          <p className="text-3xl sm:text-[32px] my-auto font-semibold">
-             Suhas MV
-           </p>
+          <p className="text-3xl sm:text-[32px] my-auto font-semibold">
+          Andrii Danylevych
+          </p>
         </a>
         <div className="mx-80 max-md:my-7 text-center">
           {navItems.map((item) => (
@@ -37,16 +36,7 @@ const Footer = () => {
           Copyright &copy; {copyrightYear} Picto.
         </p> */}
       </div>
-      <p className="text-white text-center max-xs:text-[12px] max-md:text-[14px] w-full py-10">
-        Developed with ❤️ by{" "}
-        <a
-          href="https://www.linkedin.com/in/suhas-m-v-7a499255/"
-          className="underline font-bold"
-          target="_blank"
-        >
-          Suhas MV
-        </a>
-      </p>
+      
     </div>
   );
 };

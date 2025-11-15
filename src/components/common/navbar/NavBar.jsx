@@ -4,11 +4,9 @@ import { Link as ScrollLink } from "react-scroll"; // Alias react-scroll's Link
 import { Link, useLocation } from "react-router-dom"; // Import react-router-dom's Link
 
 const navItems = [
-  { id: 1, name: "Home", url: "/" },
   { id: 2, name: "About", url: "profile" },
   { id: 3, name: "Process", url: "work-process" },
-  { id: 4, name: "Portfolio", url: "portfolio" },
-  //{ id: 5, name: "Blog", url: "blog" },
+  // { id: 4, name: "Portfolio", url: "portfolio" },
   { id: 6, name: "Services", url: "services" },
 ];
 
@@ -112,7 +110,7 @@ const NavBar = () => {
             className="flex items-center border-0 lg:max-xxl:ps-5"
           >
             <p className="text-2xl sm:text-[32px] my-auto font-semibold">
-              Suhas MV
+              Andrii Danylevych
             </p>
           </Link>
         </div>
@@ -163,9 +161,9 @@ const NavBar = () => {
           <p className="">
             <Link // Use react-router-dom Link for the Contact button
               className="btn btn-sm xs:btn-md sm:btn-lg btn-primary"
-              to={`/contact`}
+              to={{ pathname: "/", state: { scrollTo: 'portfolio' } }}
             >
-              Contact
+              Portfolio
             </Link>
           </p>
         </div>

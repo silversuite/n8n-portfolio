@@ -32,7 +32,7 @@ const Introduction = () => {
           <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full">
             Hello, I’m
             <span className="text-nowrap shrink-0 inline-block w-full">
-              Suhas MV
+              Andrii Danylevych
             </span>
           </p>
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
@@ -41,10 +41,10 @@ const Introduction = () => {
             based in Bangalore, India. I love building AI-powered automations
             with n8n. This site showcases my automation portfolio.
           </p>
-          <p className="text-center lg:text-start">
+          <p className="mt-5 text-center lg:text-start">
             <a
               className="btn-primary btn btn-xs xxs:btn-lg text-white"
-              href="mailto:suhas.mv89@gmail.com"
+              href="mailto:andriidanylevych1@gmail.com"
             >
               Say Hello!
             </a>

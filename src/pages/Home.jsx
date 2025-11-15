@@ -30,7 +30,6 @@ const Home = () => {
     <div className="relative">
       <div className="introduction-profile-background">
         <div className="content">
-          <Introduction />
           <Profile id="profile" />
         </div>
       </div>
@@ -47,7 +46,7 @@ const Home = () => {
       <div className="bg-soft-white">
         <Profession id="services" />
       </div>
-      <Contact />
+      
     </div>
   );
 };

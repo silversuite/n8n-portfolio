@@ -11,25 +11,18 @@ const Profile = () => {
     >
       <div className="flex max-md:flex-col justify-between items-center gap-6">
         {/* Profile image */}
-        <div className="xxl:max-w-106 w-auto h-auto xxl:max-h-126">
-          <div className="max-w-106 h-117 object-fill overflow-hidden rounded-xl">
+        <div className="xxl:max-w-106 h-auto xxl:max-h-126">
+          <div className="max-w-106 object-fill overflow-hidden rounded-xl">
             <img
-              className="bg-soft-white h-[120%] object-cover"
+              className="bg-soft-white h-[300px] w-[300px] object-cover"
               src={person}
               alt=""
             />
           </div>
-          {/* Social media section */}
-          <div className="relative bottom-9">
-            <div className="flex justify-center">
-              <div className="px-6 max-w-66 py-3 z-50 text-center bg-white rounded-[4px] center shadow-2xl drop-shadow-2xl shadow-white">
-                <SocialMedia />
-              </div>
-            </div>
-          </div>
+          
         </div>
 
-        <div className="max-sm:w-full w-[33rem]">
+        <div className="max-sm:w-full w-[46rem]">
           <h2
             className={`text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] text-[min(24px,38px)] max-md:text-center font-semibold mb-8`}
           >
@@ -44,28 +37,9 @@ const Profile = () => {
             drive business efficiency. I leverage n8n to build scalable automation solutions that reduce 
             manual effort and accelerate digital transformation.
             </p>
-            <p className="mt-3">
-            Alongside my automation expertise, I bring over a decade of experience as an Integration 
-            Specialist, delivering enterprise-grade solutions using IBM ACE, IBM MQ, IBM App 
-            Connect, and IBM DataPower. This strong foundation in integration, combined with 
-            modern low-code automation skills, enables me to design end-to-end solutions that are 
-            both robust and future-ready.
-            </p>
+            
           </div>
-          <div className="mt-8 flex max-md:justify-center">
-            {/*<a
-              className="btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 btn-primary text-xs xxs:text-[14px] sm:text-[16px]"
-              href="#!"
-            >
-              My Projects
-            </a>*/}
-            <a
-              className={`btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 hover:border-picto-primary bg-white duration-300 transition-all hover:text-picto-primary  ms-4 text-xs xxs:text-[14px] sm:text-[16px]`}
-              href="/n8n_portfolio/src/documents/Resume_Suhas.docx"
-            >
-              <FontAwesomeIcon icon={faDownload} /> Download CV
-            </a>
-          </div>
+          
         </div>
       </div>
     </div>
