@@ -29,7 +29,7 @@ export const router = createBrowserRouter(
         },
         {
           path: "/caseStudies/caseStudy1",
-          element: <CaseStudy1 />,
+          element: <div>Case Study 1</div>,
         },
         {
           path: "/caseStudies/caseStudy2",
