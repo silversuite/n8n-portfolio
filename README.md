@@ -1,4 +1,4 @@
-# Picto - Personal Portfolio Free Template
+# Andrii Portfolio Free Template
 
 #### Preview
 

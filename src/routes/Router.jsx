@@ -11,7 +11,7 @@ const CaseStudy5 = lazy(() => import("../components/caseStudies/caseStudy5"));
 const CaseStudy6 = lazy(() => import("../components/caseStudies/caseStudy6"));
 const Contact = lazy(() => import("../components/contact/Contact"));
 
-const repoName = import.meta.env.VITE_REPO_NAME || "";
+// const repoName = import.meta.env.VITE_REPO_NAME || "";
 
 export const router = createBrowserRouter(
   [
@@ -58,5 +58,5 @@ export const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: `/${repoName}` }
+  // { basename: `/${repoName}` }
 );

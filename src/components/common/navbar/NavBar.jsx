@@ -161,7 +161,7 @@ const NavBar = () => {
           <p className="">
             <Link // Use react-router-dom Link for the Contact button
               className="btn btn-sm xs:btn-md sm:btn-lg btn-primary"
-              to={{ pathname: "/", state: { scrollTo: 'portfolio' } }}
+              to="#portfolio"
             >
               Portfolio
             </Link>
