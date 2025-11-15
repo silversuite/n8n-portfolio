@@ -5,9 +5,9 @@
     "type": "module",
     "scripts": {
         "dev": "vite --host",
-        "build": "vite build --host",
+        "build": "vite build",
         "predeploy": "npm run build && node -e \"require('fs').copyFileSync('dist/index.html','dist/404.html'); require('fs').writeFileSync('dist/.nojekyll','')\"",
-        "deploy": "npm run predeploy && gh-pages --dotfiles -d dist --host",
+        "deploy": "npm run predeploy && gh-pages --dotfiles -d dist",
         "lint": "eslint .",
         "preview": "vite preview"
     },
