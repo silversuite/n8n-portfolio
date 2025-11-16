@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="flex max-md:flex-col justify-between mx-0 items-center h-full w-full text-neutral-200">
         <a href="#" className="flex items-center border-0">
           <p className="text-3xl sm:text-[32px] my-auto font-semibold">
-          Andrii Danylevych
+          William Jiangwei
           </p>
         </a>
         <div className="mx-80 max-md:my-7 text-center">

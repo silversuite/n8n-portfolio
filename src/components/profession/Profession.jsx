@@ -46,7 +46,7 @@ const Profession = () => {
         <p className="mt-5 text-center lg:text-start">
             <a
               className="btn-primary btn btn-xs xxs:btn-lg text-white"
-              href="mailto:andriidanylevych1@gmail.com"
+              href="mailto:williamjang92@gmail.com"
             >
               Say Hello!
             </a>

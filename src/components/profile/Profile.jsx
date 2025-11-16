@@ -11,7 +11,7 @@ const Profile = () => {
     >
       <div className="flex max-md:flex-col justify-between items-center gap-6">
         {/* Profile image */}
-        <div className="xxl:max-w-106 h-auto xxl:max-h-126">
+        {/* <div className="xxl:max-w-106 h-auto xxl:max-h-126">
           <div className="max-w-106 object-fill overflow-hidden rounded-xl">
             <img
               className="bg-soft-white h-[300px] w-[300px] object-cover"
@@ -20,24 +20,23 @@ const Profile = () => {
             />
           </div>
           
-        </div>
+        </div> */}
 
-        <div className="max-sm:w-full w-[46rem]">
+        <div className="max-sm:w-full">
           <h2
             className={`text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] text-[min(24px,38px)] max-md:text-center font-semibold mb-8`}
           >
-            n8n Automation Expert | Transforming Businesses through Intelligent Integrations
+            N8N Automation Expert | Full-Stack Developer
           </h2>
           <div
             className={`text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center text-gray-600`}
           >
             <p className={``}>
-            I am an Automation Expert specializing in n8n, with proven experience in designing 
-            and implementing intelligent workflows that connect applications, streamline processes, and 
-            drive business efficiency. I leverage n8n to build scalable automation solutions that reduce 
-            manual effort and accelerate digital transformation.
-            </p>
-            
+              I am an N8N Automation Expert and Full-Stack Developer specializing in building automated workflows, backend services, and custom API integrations.
+              I help businesses streamline operations using tools like n8n, Make.com, Zapier, and custom Node.js/Next.js solutions. With strong experience in workflow design, database structuring, OCR extraction, and cloud deployment, I turn manual processes into scalable, fully automated systems.
+              I focus on creating reliable, scalable automation systems that reduce workload, eliminate repetitive tasks, and deliver accurate, real-time results for clients.
+              I bring a problem-solving mindset to every project, ensuring each automation or application is optimized, maintainable, and tailored to real business needs.
+            </p>          
           </div>
           
         </div>

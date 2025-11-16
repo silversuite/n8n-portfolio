@@ -11,7 +11,7 @@ const socialIcons = [
   //{ icon: faFacebookF, link: "#!" },
  // { icon: faDribbble, link: "#!" },
  // { icon: faInstagram, link: "#!" },
-  { icon: faLinkedin, link: "https://www.linkedin.com/in/andrii-m-v-7a499255/" },
+  { icon: faLinkedin, link: "https://www.linkedin.com/in/william-m-v-7a499255/" },
  // { icon: faBehance, link: "#!" },
 ];
 

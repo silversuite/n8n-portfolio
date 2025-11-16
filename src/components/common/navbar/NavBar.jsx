@@ -110,7 +110,7 @@ const NavBar = () => {
             className="flex items-center border-0 lg:max-xxl:ps-5"
           >
             <p className="text-2xl sm:text-[32px] my-auto font-semibold">
-              Andrii Danylevych
+              William Jiangwei
             </p>
           </Link>
         </div>

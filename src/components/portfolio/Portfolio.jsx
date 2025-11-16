@@ -5,6 +5,9 @@ import card3 from "../../assets/images/portfolio-images/card-3.png";
 import card4 from "../../assets/images/portfolio-images/card-4.png";
 import card5 from "../../assets/images/portfolio-images/card-5.png";
 import card6 from "../../assets/images/portfolio-images/card-6.png";
+import card7 from "../../assets/images/portfolio-images/card-7.png";
+import card8 from "../../assets/images/portfolio-images/card-8.png";
+import card9 from "../../assets/images/portfolio-images/card-9.png";
 
 const projectData = [
   {
@@ -61,6 +64,30 @@ const projectData = [
       "MQ_Chatbot is an AI-powered assistant that lets users manage IBM MQ queues using simple natural language commands through a chatbot interface. ",
     link: "/caseStudies/caseStudy6",
   },
+  {
+    id: 7,
+    image: card7,
+    category: "Food Logistics",
+    title: "Food Ecosystem Management",
+    description:
+      "My responsibilities included collaborating with cross-functional teams to implement innovative solutions and optimize the platform’s performance. I ensured high-quality deliverables within deadlines, maintained open communication with stakeholders, and continuously sought improvements to meet business goals.",
+  },
+  {
+    id: 8,
+    image: card8,
+    category: "E-commerce",
+    title: "FixBIOME E-commerce Platform",
+    description:
+      "As a full-stack developer for shop.fixbiome.com, I contributed to developing a science-backed e-commerce platform specializing in gut health solutions. I designed and implemented both client-facing web interfaces and server-side functionality, ensuring seamless and secure user experiences from product browsing to checkout. My work included integrating APIs, managing databases, and optimizing site performance to handle high traffic and sales volumes.",
+  },
+  {
+    id: 9,
+    image: card9,
+    category: "TaskMagic",
+    title: "Automation Creation Tool",
+    description:
+      "As a full-stack developer at TaskMagic.site, I contributed to building and enhancing a cutting-edge automation platform designed to simplify repetitive business tasks. I developed and maintained both front-end and back-end components, ensuring seamless user experiences and robust functionality. My work involved creating dynamic web interfaces, integrating APIs, and optimizing database performance to support scalable automation workflows.",
+  }
 ];
 
 const Portfolio = () => {

@@ -32,7 +32,7 @@ const Introduction = () => {
           <p className="text-3xl xxs:text-4xl sm:max-xl:text-5xl xl:text-6xl font-semibold w-full">
             Hello, I’m
             <span className="text-nowrap shrink-0 inline-block w-full">
-              Andrii Danylevych
+              William Jiangwei
             </span>
           </p>
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
@@ -44,7 +44,7 @@ const Introduction = () => {
           <p className="mt-5 text-center lg:text-start">
             <a
               className="btn-primary btn btn-xs xxs:btn-lg text-white"
-              href="mailto:andriidanylevych1@gmail.com"
+              href="mailto:williamjang92@gmail.com"
             >
               Say Hello!
             </a>

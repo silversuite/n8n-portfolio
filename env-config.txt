@@ -6,5 +6,5 @@
 VITE_REPO_NAME=your-repo-name
 
 # Example:
-# VITE_REPO_NAME=andrii-portfolio
+# VITE_REPO_NAME=william-portfolio
 # VITE_REPO_NAME=my-awesome-portfolio 
